@@ -1,0 +1,6 @@
+;; shadow-cljs configuration
+{:deps   true
+ :builds {:nextjs {:target      :npm-module
+                   :output-dir  "nextjs/src/cljs"
+                   :build-hooks [(shadow.next-js/create-pages)]
+                   :entries     [ui.site]}}}
